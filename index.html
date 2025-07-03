@@ -1,88 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="google-site-verification" content="FYQvoTn_CNqg4Z36TcnLz5xnO71SSIJ2u6IKDOkyTjs" />
-    <title>FewCount - Accounting, Tax Filing & Tally Solutions</title>
-    <meta name="description" content="FewCount provides expert Accounting, Excel & Tally Prime Services, GST Return Filing, and PAN Card Services Online." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-    <style>
-      form {
-        max-width: 400px;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      }
-
-      form label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-      }
-
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      form button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      form button:hover {
-        background-color: #0056b3;
-      }
-    </style>
-
-  </head>
-  <body><header>
-      <h1>FewCount - Your Online Accounting Partner</h1>
-      <p>We help you with Accounting, Tally Prime, GST filing, PAN Pards, and more.</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FewCount - Your Online Accounting Partner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0056b3;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 0 auto 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    .services {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 10px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FewCount - Your Online Accounting Partner</h1>
+    <p>We help you with Accounting, Tally Prime, GST filing, PAN Pards, and more.</p>
+  </header>
   <nav>
-    <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <section id="contact">
-  <h2>Contact Us</h2>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-    <button type="submit">Send</button>
-  </form>
-</section>
-
+    <a href="#">Home</a> |
+    <a href="#">About</a>
   </nav>
-    </header>
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Accounting & Bookkeeping</li>
-        <li>Tally Prime setup and support</li>
-        <li>Income Tax Return filing</li>
-        <li>GST Return filing</li>
-        <li>PAN Card services</li>
-        <li>Generate E-way Bill</li>
-      </ul>
-    </section>
-    <footer>
-      &copy; 2025 FewCount. All rights reserved.
-    </footer>
-  </body>
+  <section>
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Accounting & Bookkeeping</li>
+      <li>Tally Prime setup and support</li>
+      <li>Income Tax Return filing</li>
+      <li>GST Return filing</li>
+      <li>PAN Card services</li>
+      <li>Generate E-way Bill</li>
+    </ul>
+  </section>
+  <footer>
+    &copy; 2025 FewCount. All rights reserved.
+  </footer>
+</body>
 </html>
