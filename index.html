@@ -5,62 +5,46 @@
     <title>FewCount - Accounting, Tax Filing & Tally Solutions</title>
     <meta name="description" content="FewCount provides expert Accounting, Excel & Tally Prime Services, GST Return Filing, and PAN Card Services Online." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
     <style>
-      body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+      form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      }
 
-/* Header styling */
-header {
-  background-color: #0077b6;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+      form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
 
-h1 {
-  font-size: 6vw;  /* scales headline with screen width */
-  margin: 0;
-}
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
 
-p {
-  font-size: 3.5vw; /* scales paragraph with screen width */
-}
+      form button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
 
-/* Section styling */
-section {
-  padding: 5%;
-}
-
-/* Footer styling */
-footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 15px;
-}
-
-/* Make images flexible */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsive adjustments for smaller phones */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 24px;  /* fix headline size on very small screens */
-  }
-  p {
-    font-size: 16px;  /* fix paragraph size on very small screens */
-  }
-  section {
-    padding: 10px;  /* smaller padding on phones */
-  }
-}
-
+      form button:hover {
+        background-color: #0056b3;
+      }
     </style>
+
   </head>
   <body><header>
       <h1>FewCount - Your Online Accounting Partner</h1>
@@ -68,7 +52,22 @@ img {
   <nav>
     <a href="index.html">Home</a> |
   <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a>
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
   </nav>
     </header>
     <section>
